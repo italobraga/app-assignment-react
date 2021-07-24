@@ -1,6 +1,8 @@
 import React, { useState, useContext, useEffect } from "react";
 import { TextField, Button, Typography } from "@material-ui/core";
 import { Link, useHistory } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "../../assets/login.css";
 import api from "../Api/api";
 import ValidacoesCadastro from "../../contexts/ValidacoesCadastro";
@@ -12,7 +14,8 @@ const DadosLogin = () => {
   const history = useHistory();
   const validacoes = useContext(ValidacoesCadastro);
   validacoes.token(token);
- /* Função de autenticação Login */
+
+  /* Função de autenticação Login */
   const LogarSistema = async (dadosLogin) => {
     try {
       const resposta = await api.post("http://localhost:5000/login", {
@@ -24,12 +27,20 @@ const DadosLogin = () => {
         return resposta.data;
       }
     } catch (error) {
-      alert("Usuário Inválido!")
+      toast.error("Usuário Inválido!", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
       console.log("Erro: ", error);
     }
   };
 
- /* Enviar dados de login para API */
+  /* Enviar dados de login para API */
   const dadosLogin = {
     email: email,
     password: senha,
@@ -37,6 +48,17 @@ const DadosLogin = () => {
 
   return (
     <div className="div-principal-login">
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className="div-login">
         <form
           className="div-formulario-login"
