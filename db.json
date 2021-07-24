@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "email": "italojunqueira@gmail.com",
+      "password": "$2a$10$G3hQhyn.Ta5iCS6UMcDQy.mVEpGyF9OCk2pn7TX3S.b/BHhWfI.my",
+      "cpf": "702.339.371-45",
+      "nome": "Italo",
+      "sobrenome": "Junqueira",
+      "id": 1
+    },
+    {
+      "email": "italojbraga@gmail.com",
+      "password": "$2a$10$HrKku7gOBbWsQIfz4XJkYeinLXfaZ6c1BrPcawL76QLqbPJZ.gQS.",
+      "cpf": "702.339.371-45",
+      "nome": "Italo",
+      "sobrenome": "Junqueira",
+      "id": 2
+    },
+    {
+      "email": "italoj@gmail.com",
+      "password": "$2a$10$8oqzZgX2i.HPp5jUQrw1iOxyEU9YzbcVzgqTq/.mm1L.zVgKIzW8m",
+      "cpf": "702.339.371-45",
+      "nome": "Italo",
+      "sobrenome": "Junqueira",
+      "id": 3
+    }
+  ]
+}

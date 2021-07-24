@@ -1,0 +1,98 @@
+.tela-cadastro {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/*-------------- Lado Esquerdo da Tela ---------------- */
+
+.div-lado-esquerdo {
+  width: 40%;
+  height: 100vh;
+  background-color: #3f51b5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.titulo-lado-esquerdo {
+    color: #f1f1f1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;;
+}
+.paragrafo-lado-esquerdo {
+    color: #f1f1f1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+.textos-lado-esquerdo {
+    margin-top: 35vh;
+}
+.link-btn {
+    width: 20%;
+    margin-top: 20px;
+}
+.btn-entrar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #f1f1f1;
+    background-color: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #f1f1f1;
+}
+
+.btn-entrar:hover {
+    cursor: pointer;  
+}
+
+
+/* -------------- Lado Direito da Tela ----------------------*/
+
+.div-lado-direito {
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-formulario {
+      width: 50%;
+      margin-top: 23vh;
+  }
+
+  .header-cadastro {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .icones-cadastro {
+      padding: 10px;
+      width: 30%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .textfield-input {
+      width: 48%;
+  }
+
+  .margin-inputs {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .btn-link {
+      text-decoration: none;
+  }
