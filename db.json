@@ -24,5 +24,13 @@
       "sobrenome": "Junqueira",
       "id": 3
     }
+    {
+      "email": "italoj@gmail.com",
+      "password": "$2a$10$8oqzZgX2i.HPp5jUQrw1iOxyEU9YzbcVzgqTq/.mm1L.zVgKIzW8m",
+      "cpf": "702.339.371-45",
+      "nome": "Italo",
+      "sobrenome": "Junqueira",
+      "id": 3
+    }
   ]
 }
